@@ -9,5 +9,8 @@
         <module name="MedunnaTeam65" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MedunnaTeam65" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
