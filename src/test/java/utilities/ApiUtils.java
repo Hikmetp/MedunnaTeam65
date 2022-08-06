@@ -24,20 +24,20 @@ public class ApiUtils {
 
     }
 
-    public static Response putRequest(String token, String endpoint, Registrant registrant){
+  // public static Response putRequest(String token, String endpoint, Registrant registrant){
 
-        Response response = given().headers(
-                "Authorization",
-                "Bearer " + token,
-                "Content-Type",
-                ContentType.JSON,
-                "Accept",
-                ContentType.JSON).contentType(ContentType.JSON).body(registrant).when().put(endpoint);
+  //     Response response = given().headers(
+  //             "Authorization",
+  //             "Bearer " + token,
+  //             "Content-Type",
+  //             ContentType.JSON,
+  //             "Accept",
+  //             ContentType.JSON).contentType(ContentType.JSON).body(registrant).when().put(endpoint);
 
 
-        return  response;
+  //     return  response;
 
-    }
+  // }
 
     public static Response deleteRequest(String token, String endpoint){
 
