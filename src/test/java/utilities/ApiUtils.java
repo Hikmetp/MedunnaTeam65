@@ -24,7 +24,18 @@ public class ApiUtils {
 
     }
 
-    public static Response putRequest(String token, String endpoint, Registrant registrant){
+    public static <CTestItem> Response postRequestTestItem(String token, String endpoint, CTestItem cTestItem){
+        Response response = given().headers(
+                "Authorization",
+                "Bearer " + token,
+                "Content-Type",
+                ContentType.JSON,
+                "Accept",
+                ContentType.JSON).body(cTestItem).when().post(endpoint);
+        return  response;
+    }
+
+    public static <Registrant> Response putRequest(String token, String endpoint, Registrant registrant){
 
         Response response = given().headers(
                 "Authorization",
