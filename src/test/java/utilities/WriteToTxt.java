@@ -1,4 +1,7 @@
+/*
 package utilities;
+
+import pojos.Registrant;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -145,3 +148,5 @@ public class WriteToTxt {
 
 
 }
+
+ */
